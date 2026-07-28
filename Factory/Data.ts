@@ -29,7 +29,7 @@ export class UserFactory {
             password: faker.internet.password({ length: 10 }),
             email: faker.internet.email(),
             day: faker.number.int({ min: 1, max: 28 }).toString(),
-            month: faker.date.month(),
+            month: 'August',
             year: faker.number.int({ min: 1980, max: 2000 }).toString(), 
             firstName: faker.person.firstName(),
             lastName: faker.person.lastName(),
