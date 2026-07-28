@@ -1,6 +1,5 @@
-import { faker } from '@faker-js/faker';
+import { faker } from '@faker-js/faker/locale/es';
 
-// 1. Definimos la interfaz completa que mapea todos los datos del formulario
 export interface UserData {
     gender: 'Mr.' | 'Mrs.';
     email: string;
