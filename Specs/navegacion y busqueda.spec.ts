@@ -21,7 +21,7 @@ test.describe('Test de navegacion y busqueda',()=>{
         await navHeader.clickCartLink();
         await expect(page).toHaveURL('/view_cart');
     })
-    test('Navigate Signup Page @regression',async({page, navHeader, homePage})=>{
+    test('Validar Navigate Signup Page @regression',async({page, navHeader, homePage})=>{
         await homePage.gotohomePage();
         await navHeader.clickSignupLink();
         await expect(page).toHaveURL('/login');
