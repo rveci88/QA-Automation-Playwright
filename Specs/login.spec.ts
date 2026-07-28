@@ -47,7 +47,7 @@ test.describe('Test de Login',()=>{
         await expect(page).toHaveURL('/login');
         await UserApi.deleteUser(request, user.email, user.password);
     })
-    test('Login con credenciales validas presionando enter @regression',async({page, loginPage, request})=>{
+    test('Verificar Login con credenciales validas presionando enter @regression',async({page, loginPage, request})=>{
         const user=UserFactory.createRandomUser();
         await UserApi.createUser(request, user);
         await loginPage.gotologinPage();
