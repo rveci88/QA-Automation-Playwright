@@ -21,6 +21,8 @@ jobs:
       run: npx playwright install chromium
 
     - name: Run Playwright Smoke tests
+      env:
+        BASE_URL: ${{ secrets.BASE_URL_PRODUCCION }}
       run: npx playwright test --grep "@smoke" --project=chromium
 
     - name: Upload Playwright Artifacts on Failure
